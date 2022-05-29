@@ -11,8 +11,8 @@ html {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 25rem auto;
+  grid-template-rows: 12rem auto;
 }
 
 .header {
