@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-column: 2 / 3;
+  background-color: red;
+}
+
+.sidebar {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-row: 1 / -1;
+  /* grid-column: 1 / 2; */
+  background-color: blue;
+}
+
+.main-content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-column: 2 / 3;
+  background-color: green;
+}
