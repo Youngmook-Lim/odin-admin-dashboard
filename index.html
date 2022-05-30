@@ -5,11 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">HEADER</header>
+      <header class="header">
+        <div class="header__search">
+          <ion-icon
+            class="header__search--icon icon"
+            name="search-outline"
+          ></ion-icon>
+          <input class="header__search--searchbar" type="text" />
+        </div>
+        <div class="header__icons">
+          <ion-icon
+            class="header__icons--notification icon"
+            name="notifications-outline"
+          ></ion-icon>
+          <img
+            class="header__icons--profile"
+            src="img/profile.jpg"
+            alt="Profile picture"
+          />
+          <h2>Youngmook Lim</h2>
+        </div>
+        <div class="header__main">
+          <img
+            class="header__icons--profile profile--big"
+            src="img/profile.jpg"
+            alt="Profile picture"
+          />
+          <p>Hi there,</p>
+          <h2>Youngmook Lim (@youngmook)</h2>
+        </div>
+        <div class="header__buttons">
+          <button class="header__buttons--new btn">New</button>
+          <button class="header__buttons--upload btn">Upload</button>
+          <button class="header__buttons--share btn">Share</button>
+        </div>
+      </header>
       <section class="sidebar">SIDEBAR</section>
       <section class="main-content">MAIN-CONTENT</section>
     </div>
